@@ -1,0 +1,15 @@
+
+io.write("How many blocks forward?:")
+height = io.read()
+io.write("How many blocks right?:")
+width = io.read()
+
+for column=width,1,-1 do
+  for row=height,1,-1 do
+    if turtle.forward() then
+      turtle.placeUp()
+    else
+    end
+  end
+end
+
